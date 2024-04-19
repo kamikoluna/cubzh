@@ -84,7 +84,3 @@ local meta = {
 setmetatable(uitheme, meta)
 
 return uitheme
-
-setmetatable(uitheme, meta)
-
-return uitheme
