@@ -66,7 +66,8 @@ local uitheme = {
 
 			textInputBorderBrightnessDiff = -0.1,
 		},
-	}
+	},
+	current = nil,
 }
 
 uitheme.current = uitheme._themes.dark
@@ -79,6 +80,10 @@ local meta = {
 		error("can't set new keys in uitheme")
 	end,
 }
+
+setmetatable(uitheme, meta)
+
+return uitheme
 
 setmetatable(uitheme, meta)
 
